@@ -15,7 +15,7 @@
 #################
 ARG BUILD_FROM
 ARG BUILD_VERSION
-FROM flaresolverr/flaresolverr:latest
+FROM 21hsmw/flaresolverr:nodriver
 
 ##################
 # 2 Modify Image #
@@ -90,13 +90,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="alexbelgium (https://github.com/alexbelgium)" \
+    maintainer="Dax Dupont (https://github.com/daxdupont)" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Add-ons" \
     org.opencontainers.image.authors="alexbelgium (https://github.com/alexbelgium)" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://github.com/alexbelgium" \
+    org.opencontainers.image.url="https://github.com/daxdupont" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
